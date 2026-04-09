@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mounika Meduri | Azure Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Floating Particles Background -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">MM<span class="dot">.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#dsa" class="nav-link">DSA</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <a href="Mounika_Meduri_Resume_Premium.rtf" download class="btn-download">
+          ⬇ Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <p class="hero-eyebrow reveal" data-delay="0">
+        <span class="blink">▋</span> Azure Data Engineer at TCS
+      </p>
+      <h1 class="hero-name reveal" data-delay="100">
+        Mounika<br><span class="gradient-text">Meduri</span>
+      </h1>
+      <p class="hero-tagline reveal" data-delay="200">
+        I <span class="typed" id="typed"></span>
+      </p>
+      <p class="hero-sub reveal" data-delay="300">
+        Building scalable Azure data pipelines, intelligent automation agents, and
+        data platforms that teams can trust — at TCS, on the UAP AFS program.
+      </p>
+      <div class="hero-cta reveal" data-delay="400">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal" data-delay="500">
+        <div class="hero-stat">
+          <span class="counter" data-target="1.5">0</span><span>+</span>
+          <p>Years at TCS</p>
+        </div>
+        <div class="hero-stat">
+          <span class="counter" data-target="150">0</span><span>+</span>
+          <p>DSA Problems</p>
+        </div>
+        <div class="hero-stat">
+          <span class="counter" data-target="2">0</span>
+          <p>Databricks Certs</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    <div class="hero-scroll-hint">
+      <div class="mouse"></div>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label scroll-reveal">Profile</div>
+      <h2 class="section-title scroll-reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text scroll-reveal">
+          <p>
+            I'm an Azure Data Engineer at <strong>Tata Consultancy Services</strong>, working on the
+            <strong>UAP AFS</strong> program since June 2024. I specialise in building reliable,
+            scalable cloud data pipelines and turning raw enterprise data into trusted
+            analytics assets.
+          </p>
+          <p>
+            Beyond pipelines, I developed intelligent <strong>automation agents</strong> that reduced
+            repetitive implementation work for my team — cutting delivery timelines and making
+            every release cycle faster.
+          </p>
+          <p>
+            I hold a B.Tech in Computer Science Engineering with a CGPA of <strong>8.9</strong> and
+            two <strong>Databricks certifications</strong> — Associate and Professional level — which
+            very few engineers achieve within 1.5 years.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card scroll-reveal" data-delay="100">
+            <span class="info-icon">🎓</span>
+            <div>
+              <p class="info-title">Education</p>
+              <p>B.Tech CSE · RVR &amp; JC College</p>
+              <p class="info-sub">CGPA: 8.9 / 10</p>
+            </div>
+          </div>
+          <div class="info-card scroll-reveal" data-delay="200">
+            <span class="info-icon">🏢</span>
+            <div>
+              <p class="info-title">Company</p>
+              <p>Tata Consultancy Services</p>
+              <p class="info-sub">Since June 2024 · UAP AFS</p>
+            </div>
+          </div>
+          <div class="info-card scroll-reveal" data-delay="300">
+            <span class="info-icon">📍</span>
+            <div>
+              <p class="info-title">Location</p>
+              <p>India</p>
+              <p class="info-sub">Open to Remote &amp; Hybrid</p>
+            </div>
+          </div>
+          <div class="info-card scroll-reveal" data-delay="400">
+            <span class="info-icon">🌐</span>
+            <div>
+              <p class="info-title">Languages</p>
+              <p>English · Telugu · Hindi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section section-tint" id="skills">
+    <div class="container">
+      <div class="section-label scroll-reveal">Tech Stack</div>
+      <h2 class="section-title scroll-reveal">Core Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group scroll-reveal" data-delay="0">
+          <h3>Cloud &amp; Data Platform</h3>
+          <div class="chip-row">
+            <span class="chip chip-blue">Azure Data Factory</span>
+            <span class="chip chip-blue">Azure Databricks</span>
+            <span class="chip chip-blue">ADLS Gen2</span>
+            <span class="chip chip-blue">Azure Synapse</span>
+            <span class="chip chip-blue">Delta Lake</span>
+          </div>
+        </div>
+        <div class="skill-group scroll-reveal" data-delay="150">
+          <h3>Programming &amp; Query</h3>
+          <div class="chip-row">
+            <span class="chip chip-teal">Python</span>
+            <span class="chip chip-teal">PySpark</span>
+            <span class="chip chip-teal">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group scroll-reveal" data-delay="300">
+          <h3>Engineering Practices</h3>
+          <div class="chip-row">
+            <span class="chip chip-orange">ETL / ELT</span>
+            <span class="chip chip-orange">Data Validation</span>
+            <span class="chip chip-orange">Agent Development</span>
+            <span class="chip chip-orange">Pipeline Optimization</span>
+          </div>
+        </div>
+        <div class="skill-group scroll-reveal" data-delay="450">
+          <h3>DevOps &amp; Reporting</h3>
+          <div class="chip-row">
+            <span class="chip chip-purple">Azure DevOps</span>
+            <span class="chip chip-purple">Git</span>
+            <span class="chip chip-purple">Power BI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label scroll-reveal">Work</div>
+      <h2 class="section-title scroll-reveal">Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>Azure Data Engineer</h3>
+                <p class="tl-company">Tata Consultancy Services (TCS)</p>
+              </div>
+              <span class="tl-date">Jun 2024 – Present</span>
+            </div>
+            <span class="tl-project">Client Project: UAP AFS</span>
+            <div class="tl-body">
+              <div class="tl-group">
+                <p class="tl-group-title">Data Engineering &amp; Pipeline Delivery</p>
+                <ul>
+                  <li>Engineered high-throughput ADF pipelines ingesting data from multiple enterprise sources into ADLS Gen2.</li>
+                  <li>Designed Databricks transformation layers using PySpark and SQL for curated analytics datasets.</li>
+                  <li>Built data quality frameworks with validation rules, completeness checks, and reconciliation logic.</li>
+                  <li>Created parameterized, reusable notebooks to reduce repetitive development effort.</li>
+                </ul>
+              </div>
+              <div class="tl-group">
+                <p class="tl-group-title">Production Ownership &amp; Stability</p>
+                <ul>
+                  <li>Owned end-to-end pipeline monitoring and root-cause analysis to reduce recurring failures.</li>
+                  <li>Supported controlled deployments via Azure DevOps and Git across environments.</li>
+                  <li>Maintained pipeline maps, transformation logic docs, and operational runbooks.</li>
+                </ul>
+              </div>
+              <div class="tl-group highlight-group">
+                <p class="tl-group-title">⚡ Agent Development — Delivery Accelerator</p>
+                <ul>
+                  <li>Designed and built intelligent automation agents that eliminated repetitive implementation bottlenecks.</li>
+                  <li>Agents encapsulate reusable logic and automate setup, reducing time-to-delivery per workflow.</li>
+                  <li>Enabled faster onboarding and shorter development cycles across the team.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECT CARDS ─── -->
+  <section class="section section-tint" id="projects">
+    <div class="container">
+      <div class="section-label scroll-reveal">Highlights</div>
+      <h2 class="section-title scroll-reveal">Key Wins</h2>
+      <div class="projects-grid">
+        <div class="project-card scroll-reveal" data-delay="0">
+          <div class="proj-icon">🚀</div>
+          <h3>Scalable ADF Pipelines</h3>
+          <p>Built high-throughput ingestion pipelines across multiple enterprise sources into ADLS Gen2 with scheduled reliability.</p>
+          <div class="proj-tags">
+            <span>Azure Data Factory</span><span>ADLS Gen2</span>
+          </div>
+        </div>
+        <div class="project-card scroll-reveal" data-delay="150">
+          <div class="proj-icon">🤖</div>
+          <h3>Automation Agent Framework</h3>
+          <p>Developed reusable automation agents for UAP AFS that reduced application development time and improved team productivity.</p>
+          <div class="proj-tags">
+            <span>Python</span><span>Agent Dev</span>
+          </div>
+        </div>
+        <div class="project-card scroll-reveal" data-delay="300">
+          <div class="proj-icon">🔬</div>
+          <h3>Data Quality Framework</h3>
+          <p>Implemented validation rules, completeness checks, and reconciliation logic to ensure reporting teams trust their data.</p>
+          <div class="proj-tags">
+            <span>PySpark</span><span>SQL</span><span>Delta Lake</span>
+          </div>
+        </div>
+        <div class="project-card scroll-reveal" data-delay="450">
+          <div class="proj-icon">⚡</div>
+          <h3>Databricks Transformation Layer</h3>
+          <p>Designed parameterized notebooks with PySpark and SQL to power curated analytics layers at scale.</p>
+          <div class="proj-tags">
+            <span>Databricks</span><span>PySpark</span>
+          </div>
+        </div>
+        <div class="project-card scroll-reveal" data-delay="600">
+          <div class="proj-icon">🛡️</div>
+          <h3>Production Stability Improvements</h3>
+          <p>Proactively fixed root causes of pipeline failures and put preventive measures in place to reduce repeat incidents.</p>
+          <div class="proj-tags">
+            <span>Azure DevOps</span><span>Git</span>
+          </div>
+        </div>
+        <div class="project-card scroll-reveal" data-delay="750">
+          <div class="proj-icon">📊</div>
+          <h3>Reusable Pipeline Patterns</h3>
+          <p>Standardized parameterized pipeline templates adopted across UAP AFS for faster onboarding of new data flows.</p>
+          <div class="proj-tags">
+            <span>ADF</span><span>Databricks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DSA ─── -->
+  <section class="section dsa-section" id="dsa">
+    <div class="container">
+      <div class="section-label scroll-reveal">Problem Solving</div>
+      <h2 class="section-title scroll-reveal">DSA Portfolio</h2>
+      <p class="dsa-intro scroll-reveal">
+        Consistent DSA practice sharpens my problem-solving instincts and directly improves
+        how I write optimized, production-quality code in real engineering work.
+      </p>
+      <div class="dsa-stats scroll-reveal">
+        <div class="dsa-stat">
+          <p class="dsa-num counter" data-target="150">0</p>
+          <p>Problems Solved</p>
+        </div>
+        <div class="dsa-stat">
+          <p class="dsa-num counter" data-target="12">0</p>
+          <p>Topics Covered</p>
+        </div>
+        <div class="dsa-stat">
+          <p class="dsa-num">Weekly</p>
+          <p>Practice</p>
+        </div>
+      </div>
+      <div class="dsa-topics scroll-reveal">
+        <span class="dsa-chip">Arrays</span>
+        <span class="dsa-chip">Strings</span>
+        <span class="dsa-chip">Hashing</span>
+        <span class="dsa-chip">Linked List</span>
+        <span class="dsa-chip">Stack &amp; Queue</span>
+        <span class="dsa-chip">Recursion</span>
+        <span class="dsa-chip">Binary Search</span>
+        <span class="dsa-chip">Trees</span>
+        <span class="dsa-chip">Graphs</span>
+        <span class="dsa-chip">Greedy</span>
+        <span class="dsa-chip">Dynamic Programming</span>
+        <span class="dsa-chip">Sliding Window</span>
+      </div>
+      <div class="dsa-profiles scroll-reveal">
+        <a href="#" class="dsa-btn">LeetCode</a>
+        <a href="#" class="dsa-btn">GeeksforGeeks</a>
+        <a href="#" class="dsa-btn">HackerRank</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CERTIFICATIONS ─── -->
+  <section class="section section-tint" id="certifications">
+    <div class="container">
+      <div class="section-label scroll-reveal">Credentials</div>
+      <h2 class="section-title scroll-reveal">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card scroll-reveal" data-delay="0">
+          <div class="cert-badge">🏅</div>
+          <h3>Databricks Certified Associate Data Engineer</h3>
+          <p>Databricks</p>
+          <span class="cert-status">✔ Verified Credential</span>
+        </div>
+        <div class="cert-card scroll-reveal" data-delay="200">
+          <div class="cert-badge">🏆</div>
+          <h3>Databricks Certified Professional Data Engineer</h3>
+          <p>Databricks</p>
+          <span class="cert-status">✔ Verified Credential</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section" id="contact">
+    <div class="container contact-inner">
+      <div class="section-label scroll-reveal">Get In Touch</div>
+      <h2 class="section-title scroll-reveal">Let's Connect</h2>
+      <p class="contact-sub scroll-reveal">
+        Open to opportunities in Azure Data Engineering, Data Platform roles, and remote collaborations.
+      </p>
+      <div class="contact-cards scroll-reveal">
+        <a href="mailto:mounika.meduri@email.com" class="contact-card">
+          <span>📧</span>
+          <p>mounika.meduri@email.com</p>
+        </a>
+        <a href="#" class="contact-card">
+          <span>💼</span>
+          <p>LinkedIn Profile</p>
+        </a>
+        <a href="#" class="contact-card">
+          <span>🐙</span>
+          <p>GitHub Profile</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <p>Designed &amp; Built by <strong>Mounika Meduri</strong></p>
+    <p class="footer-sub">Azure Data Engineer · TCS · 2026</p>
+    <a href="#home" class="back-to-top">↑ Back to Top</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
